@@ -1,8 +1,68 @@
-@media (max-width:768px){
+/*@media (max-width:768px){
   .bio, .about-container {
     flex-direction: column;
     text-align: center;
     padding: 30px;
+  } * / 
+
+/* =========================
+   RESPONSIVE FIXES
+========================= */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: none;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .section {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px 0 0 0;
+  }
+
+  /* Hero section */
+  .bio {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .bio-left h1 {
+    font-size: 2rem;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  .image {
+    width: 220px;
+    height: 250px;
+  }
+
+  /* Buttons */
+  .button {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .button button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  /* Section padding */
+  .about, .Skills, .projects-section, .stack, .education, .contact {
+    padding: 30px 20px;
+  }
+
+  /* About container */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
   }
 }
 
@@ -62,7 +122,9 @@ header {
 .section a:hover {
   color: #38BDF8; /* cyan hover */
 }
-
+.page{
+  text-decoration: none;
+}
 /* =========================
    Hero Section
 ========================= */
@@ -137,6 +199,7 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .me:hover {
@@ -144,7 +207,7 @@ h1 {
   color: #fff;
 }
 
-.tir {
+ .tir {
   background: transparent;
   border: 2px solid #38BDF8;
   color: #38BDF8;
@@ -153,6 +216,7 @@ h1 {
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .tir:hover {
@@ -370,6 +434,24 @@ h1 {
 .form button:hover {
   background-color: #EAB308;
 }
+
+.group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.group label {
+  min-width: 60px; /* keeps labels aligned */
+  margin-right: 5px;
+}
+
+.group input {
+  flex: 1;  /* makes inputs expand evenly */
+  min-width: 200px;
+}
+
 
 /* =========================
    Footer
